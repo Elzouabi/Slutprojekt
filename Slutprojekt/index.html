@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+	<title>Slutprojekt</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<nav class="navbar navbar-light" style="background-color: #59C3C3;">
+		<a class="navbar-brand" href="#">
+			<img src="img/logo.png" width="100" height="100" class="d-inline-block align-top" alt="">
+		</a>
+		<h1 class="log">Tjejhack</h1>
+		<img src="img/knuthahn.jpg" width="100" height="100" class="d-inline-block align-top" alt="">
+	</nav>
+	<nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+		<form class="form-inline">
+			<button class="btn btn-success" type="button">Om oss</button>
+			<button class="btn btn-success" type="button">Hitta oss</button>
+			<button class="btn btn-success" type="button">Quiz</button>
+		</form>
+	</nav>
+	<nav class="navbar navbar-light" style="background-color: white;">
+		<h1>Ladda ner häftet här</h1>
+		<div style="text-align:center;">
+
+			<button type="button" class="btn btn-primary btn-lg" link rel="stylesheet" href="https://docs.google.com/document/d/1wHjENfKS35pxIJBCpY6p1pe8bxh9lJHSridFDkwG3x8/edit?usp=sharing">Ladda ned</button>
+		</div>
+	</nav>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<div class="w3-content w3-display-container">
+					<img class="mySlides" src="img/slideshow.jpg" style="width:100%">
+					<img class="mySlides" src="img/slideshow2.jpg" style="width:100%">
+
+					<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+					<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+				</div>
+
+				<script>
+					var slideIndex = 1;
+					showDivs(slideIndex);
+
+					function plusDivs(n) {
+						showDivs(slideIndex += n);
+					}
+
+					function showDivs(n) {
+						var i;
+						var x = document.getElementsByClassName("mySlides");
+						if (n > x.length) {slideIndex = 1}
+							if (n < 1) {slideIndex = x.length}
+								for (i = 0; i < x.length; i++) {
+									x[i].style.display = "none";  
+								}
+								x[slideIndex-1].style.display = "block";  
+							}
+						</script>
+					</div>
+					<div class="col-3">
+					<h2> Nästa tjejhack är om</h2>
+						<h3 id="demo"></h3>
+						<script>
+					// Set the date we're counting down to
+					var countDownDate = new Date("May 20, 2019 12:00:00").getTime();
+
+					// Update the count down every 1 second
+					var x = setInterval(function() {
+
+					  // Get todays date and time
+					  var now = new Date().getTime();
+
+					  // Find the distance between now and the count down date
+					  var distance = countDownDate - now;
+
+					  // Time calculations for days, hours, minutes and seconds
+					  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+					  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+					  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+					  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+					  // Output the result in an element with id="demo"
+					  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+					  + minutes + "m " + seconds + "s ";
+
+					  // If the count down is over, write some text 
+					  if (distance < 0) {
+					  	clearInterval(x);
+					  	document.getElementById("demo").innerHTML = "EXPIRED";
+					  }
+					}, 1000);
+				</script>
+			</div>
+		</div>
+	</div>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
