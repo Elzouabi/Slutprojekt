@@ -17,9 +17,21 @@
 	font-style: bold;
 
 }
-body{
-	font-family: verdana;
+.btn{
+	font-family: Gugi, cursive;
 }
 header{
 	box-shadow: 0px 1px 8px -1px rgba(0,0,0,0.7);
+	font-family: Gugi, cursive;
+
 }
+.navtext{
+	margin: 5px;
+	font-size: 50px;
+}
+.nav-link{
+	font-size: 25px;
+}
+
+
+
