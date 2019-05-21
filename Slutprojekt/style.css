@@ -8,7 +8,8 @@
 	margin: 0;
     padding: 0;
     text-align: justify;
-    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-family: Gugi, cursive;
+
     font-size: 13px;
     background-color:#425eb4;
 	}
@@ -31,6 +32,9 @@ header{
 }
 .nav-link{
 	font-size: 25px;
+}
+.container{
+	padding-top: 20px;
 }
 
 

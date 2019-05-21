@@ -7,87 +7,96 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
-	<div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.3"></script>
-	</head>
-
+	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.3"></script>
 	
-	<header>
+</head>
 
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+<header>
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
 		<img src="img/logo.png" width="90" height="90" class="d-inline-block align-top" alt="">
-			<span class="log">Tjejhack</span
+		<span class="log">Tjejhack</span
 			<span class="navbar-toggler-icon"></span>
 
 
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+				<span class="navbar-toggler-icon"></span>
+			</button>
 
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item active">
-					<button type="button" class="btn btn-light navtext">Hem</button>
+						<button type="button" class="btn btn-light navtext">Hem</button>
 					</li>
 					<li class="nav-item active">
-					<button type="button" class="btn btn-light navtext">Om oss</button>
+						<button type="button" class="btn btn-light navtext">Om oss</button>
 					</li>
 					<li class="nav-item active">
-					<button type="button" class="btn btn-light navtext">Hitta Oss</button
-					</li>
-					<li class="nav-item active">
-					<button type="button" class="btn btn-light navtext">Quiz</button
-					</li>
-				</ul>
-				<a href="#"></a><img class="d-none d-lg-block"src="img/knuthahn.jpg" width="90" height="90" class="d-inline-block align-top" alt="">
-		</a>
+						<button type="button" class="btn btn-light navtext">Hitta Oss</button
+						</li>
+						<li class="nav-item active">
+							<button type="button" class="btn btn-light navtext">Quiz</button
+							</li>
+						</ul>
+						<div style="text-align:center;">
+
+							<button type="button" class="btn btn-primary btn-lg" link rel="stylesheet" href="https://docs.google.com/document/d/1wHjENfKS35pxIJBCpY6p1pe8bxh9lJHSridFDkwG3x8/edit?usp=sharing">Ladda ner häftet här</button>
+						</div>
+						<a href="#"></a><img class="d-none d-lg-block"src="img/knuthahn.jpg" width="90" height="90" class="d-inline-block align-top" alt="">
+					</a>
 				</form>
 			</div>
 		</nav>
-
-</header>
+	</header>
 <body>
-<div style="text-align:center;">
+		
+<div class="container">
+	 <div class="row">
+		  <div class="col-4">
+					<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fteknist%2F&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+			</div>
+    		<div class="col-8">
+					<div class="w3-content w3-display-container">
+						<img class="mySlides" src="img/slideshow.jpg" style="width:100%">
+						<img class="mySlides" src="img/slideshow2.jpg" style="width:100%">
 
-	<button type="button" class="btn btn-primary btn-lg" link rel="stylesheet" href="https://docs.google.com/document/d/1wHjENfKS35pxIJBCpY6p1pe8bxh9lJHSridFDkwG3x8/edit?usp=sharing">Ladda ner häftet här</button>
+						<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+						<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+					</div>
+			
+			
+			</div>
+			
+	</div>
 </div>
 <div class="container">
 	<div class="row">
-	
-	<div class="fb-page" data-href="https://www.facebook.com/teknist/" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/teknist/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/teknist/">Teknikprogrammet Gymnasieskolan Knut Hahn</a></blockquote></div>
-		<div class="col">
-			<div class="w3-content w3-display-container">
-				<img class="mySlides" src="img/slideshow.jpg" style="width:100%">
-				<img class="mySlides" src="img/slideshow2.jpg" style="width:100%">
+	<div class="col-1">
+				<script>
+						var slideIndex = 1;
+						showDivs(slideIndex);
 
-				<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-				<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-			</div>
-
-			<script>
-				var slideIndex = 1;
-				showDivs(slideIndex);
-
-				function plusDivs(n) {
-					showDivs(slideIndex += n);
-				}
-
-				function showDivs(n) {
-					var i;
-					var x = document.getElementsByClassName("mySlides");
-					if (n > x.length) {slideIndex = 1}
-						if (n < 1) {slideIndex = x.length}
-							for (i = 0; i < x.length; i++) {
-								x[i].style.display = "none";  
-							}
-							x[slideIndex-1].style.display = "block";  
+						function plusDivs(n) {
+							showDivs(slideIndex += n);
 						}
-					</script>
-				</div>
-				<div class="col-3">
-					<h2> Nästa tjejhack är om</h2>
-					<h3 id="demo"></h3>
-					<script>
+
+						function showDivs(n) {
+							var i;
+							var x = document.getElementsByClassName("mySlides");
+							if (n > x.length) {slideIndex = 1}
+								if (n < 1) {slideIndex = x.length}
+									for (i = 0; i < x.length; i++) {
+										x[i].style.display = "none";  
+									}
+									x[slideIndex-1].style.display = "block";  
+								}
+							</script>
+						</div>
+						<div class="col-3">
+							<h2> Nästa tjejhack är om</h2>
+							<h3 id="demo"></h3>
+							<script>
 					// Set the date we're counting down to
 					var countDownDate = new Date("May 20, 2019 12:00:00").getTime();
 
@@ -115,12 +124,11 @@
 					  	clearInterval(x);
 					  	document.getElementById("demo").innerHTML = "EXPIRED";
 					  }
-					}, 1000);
-				</script>
-			</div>
-		</div>
-	</div>
-</head>
+						}, 1000);
+					</script>
+				</div>
+</div>
+	</body>
 
 
 
@@ -131,8 +139,10 @@
 
 
 
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
