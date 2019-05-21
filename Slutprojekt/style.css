@@ -36,6 +36,9 @@ header{
 .container{
 	padding-top: 20px;
 }
-
+.bilder{
+	border-radius: 50%;
+	max-width: 120px;
+}
 
 
