@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+	<title>Tjejhacks Bästa Hemsida</title>
+	<link rel="stylesheet" type="text/css" href="style2.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+	<script src="main.js"></script>
+</head>
+<body>
+<h1>Tjejhacks bästa hemsida!</h1> 
+<form id="quiz" name="quiz">
+
+<p> Programspråket Python har fått sitt namn från...</p>
+<input type="radio" id="mc" name="fråga1" value="Ormen">Ormen<br>
+<input type="radio" id="mc" name="fråga1" value="Monty_Python">Monty Python<br>
+<input type="radio" id="mc" name="fråga1" value="lukten">Lukten<br>
+
+<p> Vilket bibliotek använder man när man ritar med Python?</p>
+<input type="radio" id="mc" name="fråga2" value="Turtle">Turtle<br>
+<input type="radio" id="mc" name="fråga2" value="Paint">Paint<br>
+<input type="radio" id="mc" name="fråga2" value="Draw">Draw<br>
+
+<p> Vilken typ av programmering gör man med Python?</p>
+<input type="radio" id="mc" name="fråga3" value="Blockprogrammering">Blockprogrammering<br>
+<input type="radio" id="mc" name="fråga3" value="Textprogrammering">Textprogrammering<br>
+<input type="radio" id="mc" name="fråga3" value="Analog_programmering">Analog programmering<br>
+<input id="button" type="button" value="Rätta" onclick="check();">
+</form>
+<div id = "after_submit">
+<p id = "number_correct"></p>
+<p id = "message"></p>
+<img id = "picture">
+</div>
+</html>
+
+</body>

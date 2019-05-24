@@ -1,0 +1,7 @@
+body{
+	font-family: Gugi, cursive;
+    font-size: 13px;
+}
+#after_submit{
+	visibility: hidden;
+}
