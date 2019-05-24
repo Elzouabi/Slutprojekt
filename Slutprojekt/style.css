@@ -1,22 +1,24 @@
+html{
+	scroll-behavior:smooth;
+}
 #nav{
 	
 	font-family: verdana;
 	font-size: 30px
 
 	}
+	.log{ font-size: 60px;
+	color: #E80C94;
+	font-style: bold;
+
+}
 	body{
-	margin: 0;
-    padding: 0;
     text-align: justify;
     font-family: Gugi, cursive;
     font-size: 13px;
     background-color:#425eb4;
 	}
-.log{ font-size: 60px;
-	color: red;
-	font-style: bold;
 
-}
 .row{
 	font-family: Gugi, cursive;
 
@@ -44,10 +46,13 @@ header{
 	border-radius: 50%;
 	max-width: 120px;
 }
-.klocka{
-
-}
 .caroussel{
 	max-height: 300px;
+}
+.hej{
+	margin: 20px;
+}
+.iframe{
+max-width: 600px;
 }
 
