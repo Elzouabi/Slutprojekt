@@ -56,3 +56,16 @@ header{
 max-width: 600px;
 }
 
+footer{
+	text-align: center;
+	background-color: #E80C94;
+}
+#foot{
+	color: black;
+}
+#foot:hover{
+	color: white;
+}
+#after_submit{
+	visibility: hidden;
+}
